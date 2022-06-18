@@ -1,0 +1,36 @@
+.swiper-pagination {
+    .swiper-pagination-bullet {
+        width: 16px;
+        height: 16px;
+
+        background: #999999;
+
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #ffba08;
+    }
+}
+
+.swiper {
+    .swiper-button-prev::after {
+        color: #ffba08;
+    }
+
+    .swiper-button-next::after {
+        color: #ffba08;
+    }
+}
+
+// For a reason i don't understand, the only way these elements could be styled was with nested selectors
+// (which made me waste a couple of hours 🤬)
+
+@media (max-width: 30em) {
+    .swiper-pagination {
+        .swiper-pagination-bullet {
+            width: 8px;
+            height: 8px;
+        }
+    }
+}
